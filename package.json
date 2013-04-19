@@ -1,0 +1,14 @@
+{
+    "name": "links",
+    "version": "0.0.1",
+    "dependencies": {
+        "connect": "latest",
+        "express": "latest",
+        "bliss": "latest",
+        "whiskers": "latest"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    }
+}
