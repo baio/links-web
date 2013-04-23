@@ -30,6 +30,12 @@
             stroke-opacity: .6
         }
 
+        .link2 {
+            stroke: red;
+            stroke-opacity: .6
+        }
+
+
         .node {
             stroke: #999;
             stroke-width: 1.5px;
