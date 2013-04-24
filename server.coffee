@@ -1,16 +1,11 @@
-express = require 'express'
-Bliss = require 'bliss'
+connect = require("connect")
 
-app = express()
-bliss = new Bliss(cacheEnabled: false, ext: "bliss")
+_router = (req, res, next) ->
+  if req.url == "/"
+    req.url = "/main.html"
+  next()
 
-
-
-app.engine '.bliss', (path,options,callback) ->
-  callback null, bliss.render(path, options)
-
-app.get '/', (req, res) ->
-  res.render "_layout.bliss", title : "Wellcome!"
-
-app.use(express.static("public"))
-    .listen process.env.PORT | 8085
+connect()
+  .use(_router)
+  .use(connect.static("public"))
+  .listen(8005)

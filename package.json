@@ -2,10 +2,7 @@
     "name": "links",
     "version": "0.0.1",
     "dependencies": {
-        "connect": "latest",
-        "express": "latest",
-        "bliss": "latest",
-        "whiskers": "latest"
+        "connect": "latest"
     },
     "engines": {
         "node": "0.10.x",
